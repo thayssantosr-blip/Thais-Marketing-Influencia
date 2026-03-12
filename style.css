@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primaria: #fff;
+    --secundaria: #895129;
+    --escuro: #6a330c;
+    --maisEscuro: #44240c;
+    --claro: #dea77c;
+    --vidro: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    background-color: var(--claro);
+    color: var(--maisEscuro);
+}
+
+.navegacao {
+    position: fixed;
+    top: 0;
+    background: #6a330c81;
+    width: 100%;
+    z-index: 1;
+    padding: 1.5rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 3rem;
+}
+
+.menu-link {
+    color: var(--claro);
+    text-decoration: none;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.menu-link:hover {
+    color: var(--escuro);
+    transition: 0.5s;
+}
+
+.cabecalho {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.foto-perfil {
+    width: 170px;
+    height: 205px;
+    box-shadow: 0 0 20px #895129b2;
+    border-radius: 50%;
+    border: 4px solid var(--vidro);
+    margin-bottom: 40px;
+}
+
+.cabecalho-sub-tiulo {
+    font-size: 1.5rem;
+}
+
+.sobre {
+    padding: 6rem 2rem;
+}
+
+.sobre-titulo {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sobre-caixa {
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid var(--vidro);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.sobre-paragrafo {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.contato {
+    padding: 6rem 2rem;
+}
+
+.contato-titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.formulario-contato {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    padding: 2rem;
+    border: 1px solid var(--vidro);
+    border-radius: 16px;
+}
+
+.campo-form {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    color: var(--maisEscuro);
+    border: 1px solid var(--vidro);
+    outline: none;
+}
+
+.grupo-form {
+    margin-bottom: 1.5rem;
+}
+
+.botao-form {
+    color: var(--claro);
+    background: linear-gradient(45deg, var(--escuro), var(--secundaria));
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: all 0.5 ease;
+}
+
+.botao-form:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px #dea77c86;
+}
+
+.particulas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    background: radial-gradient(circle at 10% 20%, var(--primaria)0%, transparent 20%),
+    radial-gradient(circle at 90% 80%, var(--maisEscuro)0%, transparent 20%);
+}
